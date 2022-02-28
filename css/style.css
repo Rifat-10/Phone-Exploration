@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(194, 194, 194);
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+.buttons{
+    text-align: center;
+    margin: 0 0 20px;
+}
+button{
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #a4a4ec;
+    
+}
+.buttons button{
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+#phones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#loading{
+    display: non;
+}
+
+
+
+#search{
+    background-color: #555556;
+}
+
+#search:hover{
+    background-color: #2a2a2c;
+}
+#search-input{
+    width: 30%;
+}
+
+img{
+    display: inline-block;
+    margin: auto;
+    
+}
+
+h3 {
+    line-height: 10px;
+    font-size: 18px;
+   
+    
+    
+}
+
+
+
+#phone-count{
+    margin-left: 20px;
+}
+
