@@ -28,14 +28,14 @@ button:hover{
     background-color: #a4a4ec;
     
 }
-.buttons button{
+button{
     padding: 10px 20px;
     margin: 5px;
 }
 
 #phones{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 #loading{
