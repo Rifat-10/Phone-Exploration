@@ -14,12 +14,15 @@ const dataLoadingNone =() => {
     getData.style.display = "block";
 }
 const allPhone =() => {
-    const searchValue = document.getElementById("search-input").value;
-    const url = 'https://openapi.programming-hero.com/api/phones?search=${searchText}'
+    const searchText = document.getElementById("search-input").value;
+    const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`
     console.log(url);
     fetch(url)
-    .then((response) => response.json())
-    .then((data) => console.log(data));
-
-    console.log(searchValue);
+    .then(response => response.json())
+    .then(data =>showPhoneDetails(data.data));
+};
+const showPhoneDetails = (data) =>{
+    
+    console.log(data);
+   
 }
