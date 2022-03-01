@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="min-vh-100 d-flex flex-column justify-content-center align-items-center">
+<body class="bg-light  container min-vh-100 d-flex flex-column justify-content-center align-items-center">
     <div class=" container">
         <div class="">
             <div class="logo text-center">
                 <img class="text-center" src="image/logo.png" alt="">
+
                 <div class="search my-2">
-                    <input  id="search-input" type="text" placeholder="Name, Short Form or Capital Form">
-                    <button onclick="allPhone()" class="mx-2" id="search">Search Mobile</button>
+                    <input class="bg-transparent text-black" id="search-input" type="text"
+                        placeholder="Name, Short Form or Capital Form">
+                    <button onclick="allPhone()" class="mx-2 btn btn-danger" id="search">Search Mobile</button>
                 </div>
             </div>
 
@@ -28,15 +30,16 @@
                 <h3 class="my-3">Please wait, data is loading...</h3>
             </div>
 
-            <div id="phone-container" class="phone-container">
+            <div id="details-container" class="details-container  mt-5 ms-5 pt-5 mb-4 py-3">
 
-                
+
             </div>
 
-            <!-- <div id="data">
-                <p style="text-align: center; font-size: 18px;" id="phone-count"></p>
-                <div id="phones"></div>
-            </div> -->
+            <div id="phone-container" class="phone-container row row-cols-1 row-cols-md-3 g-3">
+
+
+            </div>
+
         </div>
     </div>
 

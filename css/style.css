@@ -1,6 +1,4 @@
 body{
-    background-color: rgb(194, 194, 194);
-    color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -70,8 +68,11 @@ h3 {
 }
 
 
-
-#phone-count{
-    margin-left: 20px;
+#phone-container div{
+    border-radius: 10px;
+    border: 0;
+    transition: box-shadow 0.8s;
 }
-
+#phone-container div:hover{
+    box-shadow: 0 0 05px 5px #6f6d6d82;
+}
