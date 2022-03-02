@@ -10,31 +10,16 @@ body{
 
 
 button{
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border: 0;
-    border-radius: 10px;
-    /* cursor: pointer; */
+    color: rgb(250, 246, 246);
+    border-radius: 80px;
+    cursor: pointer;
 }
 
 button:hover{
     background-color: #a4a4ec;
     
-}
-button{
-    padding: 0px 20px;
-    margin: 5px;
-}
-
-#phones{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-#loading{
-    display: none;
 }
 
 
@@ -60,9 +45,9 @@ img{
 h3 {
     line-height: 10px;
     font-size: 18px;
-   
-    
-    
+}
+#loading{
+    display: none;
 }
 
 
