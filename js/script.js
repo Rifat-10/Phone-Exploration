@@ -61,7 +61,7 @@ const details = (id) => {
 
 const showPhoneDetails = (info) => {
     document.getElementById("details-container").innerHTML = `
-    <div class="container bg-white border p-3 p-md-5 mx-auto border border-2">
+    <div class="container bg-white  p-3 p-md-5 mx-auto border border-2">
         <div class="pro-pic w-100 d-flex justify-content-center align-items-center">
             <img class="pb-5 mx-auto" width="50%" src="${info.image}" alt="">
         </div>
