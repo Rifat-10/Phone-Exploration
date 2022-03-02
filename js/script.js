@@ -1,3 +1,4 @@
+//search button handler
 const allPhone = () => {
     const searchText = document.getElementById("search-input").value;
     const parent = document.getElementById("phone-container");
@@ -14,6 +15,7 @@ const allPhone = () => {
     loadingBar.style.display = "block"
 };
 
+// display phone
 const showPhone = (data) => {
     const loadingBar = document.getElementById("loading")
     loadingBar.style.display = "none"
@@ -51,7 +53,7 @@ const showPhone = (data) => {
     }
 };
 
-
+//details button handler
 const details = (id) => {
     const url = `https://openapi.programming-hero.com/api/phone/${id}`;
     fetch(url)
@@ -59,6 +61,7 @@ const details = (id) => {
         .then(data => showPhoneDetails(data.data));
 };
 
+// display phone details
 const showPhoneDetails = (info) => {
     document.getElementById("details-container").innerHTML = `
     <div class="container bg-white  p-3 p-md-5 mx-auto border border-2">
