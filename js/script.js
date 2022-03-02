@@ -45,7 +45,7 @@ const showPhone = (data) => {
                      <h3><b> ${phone.phone_name} </b></h2>
                      <p>Brand Name: ${phone.brand} </p>
             <div class="button2">
-                <button class="btn-success details w-25 rounded-pill" onclick="details('${phone.slug}')" >Details</button>
+            <a href="#details-container" > <button class="btn-success details w-25 rounded-pill" onclick="details('${phone.slug}')" >Details</button></a>
             </div>
 
         </div>`;
