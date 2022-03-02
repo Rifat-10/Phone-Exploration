@@ -11,18 +11,18 @@ const showPhone = (data) => {
         const parent = document.getElementById("phone-container");
 
         const div = document.createElement("div");
-        div.innerHTML = `<div class="bg-secondary card border p-5">
-    <div class="pro-pic ">
-        <img class="w-25" src="${phone.image}" alt="">
-    </div>
-    <h2>Name: ${phone.phone_name} </h2>
-    <h2>Brand Name: ${phone.brand} </h2>
-    <div class="button2">
-        <button class="btn-success details" 
-        onclick="details('${phone.slug}')"
-        >Details</button>
-    </div>
-</div>`;
+        div.innerHTML = `
+        <div class="bg-secondary card border p-5 shadow-lg p-3 mb-3 bg-body rounded">
+            <div class="pro-pic ">
+                <img class="w-25 pb-4" src="${phone.image}" alt="">
+            </div>
+                     <h3><b> ${phone.phone_name} </b></h2>
+                     <p>Brand Name: ${phone.brand} </p>
+            <div class="button2">
+                <button class="btn-success details" onclick="details('${phone.slug}')" >Details</button>
+            </div>
+
+        </div>`;
         parent.appendChild(div);
     }
 };
@@ -37,27 +37,27 @@ const details = (id) => {
 
 const showPhoneDetails = (info) => {
     document.getElementById("details-container").innerHTML = `
-    <div class="card border p-5 ">
+    <div class="card border p-5 w-auto border border-2">
         <div class="pro-pic ">
-                <img class="w-25" src="${info.image}" alt="">
+                <img class="w-25 pb-5" src="  ${info.image}" alt="">
         </div>
         <div class="">
-            <h4>Name: ${info.name} </h4>
-            <h4>Release Date: ${info.releaseDate ? info.releaseDate : "No release date"}</h4>
-            <h4>Id: ${info.slug} </h4>
-            <h2>Main Features: </h2>
-            <h4>Chipset: ${info.mainFeatures.chipSet} </h4>
-            <h4>Displaysize: ${info.mainFeatures.displaySize} </h4>
-            <h4>Memory: ${info.mainFeatures.memory} </h4>
-            <h4>Sensors: ${info.mainFeatures.sensors} </h4>
-            <h4>Storage: ${info.mainFeatures.storage} </h4>
-            <h2>Others Information: </h2>
-            <h4>Bluetooth: ${info.others.Bluetooth} </h4>
-            <h4>Gps: ${info.others.GPS} </h4>
-            <h4>Nfc: ${info.others.NFC} </h4>
-            <h4>Radio: ${info.others.Radio} </h4>
-            <h4>USB: ${info.others.USB} </h4>
-            <h4>WLAN: ${info.others.WLAN} </h4>
+            <h1 class="pb-3">  ${info.name} </h1>
+            <p><b>Release Date:</b> ${info.releaseDate ? info.releaseDate : "No release date found"}</p>
+            <p><b>Id:</b> ${info.slug} </p>
+            <h4>Main Features: </h4>
+            <p><b>Chipset:</b> ${info.mainFeatures.chipSet} </p>
+            <p><b>Displaysize:</b> ${info.mainFeatures.displaySize} </p>
+            <p><b>Memory:</b> ${info.mainFeatures.memory} </p>
+            <p><b>Sensors:</b> ${info.mainFeatures.sensors} </p>
+            <p><b>Storage:</b> ${info.mainFeatures.storage} </p>
+            <h4>Others Information: </h4>
+            <p><b>Bluetooth:</b> ${info.others.Bluetooth} </p>
+            <p><b>Gps:</b> ${info.others.GPS} </p>
+            <p><b>Nfc:</b> ${info.others.NFC} </p>
+            <p><b>Radio:</b> ${info.others.Radio} </p>
+            <p><b>USB:</b> ${info.others.USB} </p>
+            <p><b>WLAN:</b> ${info.others.WLAN} </p>
             </div>
 
      </div>

@@ -8,18 +8,15 @@ body{
 }
 
 
-.buttons{
-    text-align: center;
-    margin: 0 0 20px;
-}
+
 button{
-    padding: 8px 15px;
     font-size: 16px;
+    text-align: center;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border: 0;
     border-radius: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 button:hover{
@@ -27,7 +24,7 @@ button:hover{
     
 }
 button{
-    padding: 10px 20px;
+    padding: 0px 20px;
     margin: 5px;
 }
 
@@ -37,20 +34,21 @@ button{
 }
 
 #loading{
-    display: non;
+    display: none;
 }
 
 
 
 #search{
     background-color: #555556;
+    text-align: center;
 }
 
 #search:hover{
     background-color: #2a2a2c;
 }
 #search-input{
-    width: 30%;
+    width:20%;
 }
 
 img{
@@ -68,11 +66,11 @@ h3 {
 }
 
 
-#phone-container div{
+/* #phone-container div{
     border-radius: 10px;
     border: 0;
     transition: box-shadow 0.8s;
 }
 #phone-container div:hover{
     box-shadow: 0 0 05px 5px #6f6d6d82;
-}
+} */
